@@ -4,14 +4,16 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const passport = require('passport')
 const port = 3000 || process.env.PORT
+require('dotenv').config()
 
 const app = express()
 
 // App config
 
 let DBconfig = {
-  development: 'mongodb://localhost/something-cool',
-  test: 'mongodb://localhost/something-cool-test'
+  development: 'mongodb://localhost/zomatofinder',
+  production: 'mongodb://andras:'+process.env.ATLAS_PW+'@zomatofinder-shard-00-00-j1amx.mongodb.net:27017,zomatofinder-shard-00-01-j1amx.mongodb.net:27017,zomatofinder-shard-00-02-j1amx.mongodb.net:27017/zomatofinder?ssl=true&replicaSet=zomatofinder-shard-0&authSource=admin'
+  test: 'mongodb://localhost/zomatofinder-test'
 }
 
 mongoose.Promise = global.Promise

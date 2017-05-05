@@ -14,7 +14,9 @@ module.exports = {
         address: req.body.address,
         city: req.body.city,
         city_id: req.body.city_id,
-        country_id: req.body.country_id
+        country_id: req.body.country_id,
+        latitude: req.body.latitude,
+        longitude: req.body.longitude
       },
       user_rating: {
         aggregate_rating: req.body.aggregate_rating,

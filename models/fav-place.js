@@ -9,7 +9,9 @@ let favSchema = new Schema({
     address: String,
     city: String,
     city_id: Number,
-    country_id: Number
+    country_id: Number,
+    latitude: String,
+    longitude: String
   },
   user_rating: {
     aggregate_rating: String,
