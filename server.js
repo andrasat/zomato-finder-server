@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const passport = require('passport')
-const port = 3000 || process.env.PORT
+const port = process.env.PORT || 3000
 require('dotenv').config()
 
 const app = express()
