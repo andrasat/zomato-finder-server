@@ -24,6 +24,7 @@ module.exports = {
       },
       average_cost_for_two: req.body.average_cost_for_two,
       currency: req.body.currency,
+      thumb: req.body.thumb,
       featured_image: req.body.featured_image
     }).save((err, fav)=> {
       if(err) {

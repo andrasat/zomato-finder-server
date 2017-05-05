@@ -19,6 +19,7 @@ let favSchema = new Schema({
   },
   average_cost_for_two: Number,
   currency: String,
+  thumb: String,
   featured_image: String
 })
 
