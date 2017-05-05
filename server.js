@@ -12,7 +12,7 @@ const app = express()
 
 let DBconfig = {
   development: 'mongodb://localhost/zomatofinder',
-  production: 'mongodb://andras:'+process.env.ATLAS_PW+'@zomatofinder-shard-00-00-j1amx.mongodb.net:27017,zomatofinder-shard-00-01-j1amx.mongodb.net:27017,zomatofinder-shard-00-02-j1amx.mongodb.net:27017/zomatofinder?ssl=true&replicaSet=zomatofinder-shard-0&authSource=admin'
+  production: 'mongodb://andras:'+process.env.ATLAS_PW+'@zomatofinder-shard-00-00-j1amx.mongodb.net:27017,zomatofinder-shard-00-01-j1amx.mongodb.net:27017,zomatofinder-shard-00-02-j1amx.mongodb.net:27017/zomatofinder?ssl=true&replicaSet=zomatofinder-shard-0&authSource=admin',
   test: 'mongodb://localhost/zomatofinder-test'
 }
 
